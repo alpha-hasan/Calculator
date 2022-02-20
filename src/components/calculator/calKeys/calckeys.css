@@ -1,0 +1,88 @@
+.calculator__keys {
+    background: var(--grey-200);
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+        ". . . ."
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero decimal clear equal";
+}
+
+.calculator__keys>button {
+    border: 0;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.decimal {
+    grid-area: decimal;
+}
+
+.clear {
+    grid-area: clear;
+    font-weight: 400;
+}
+
+.equal {
+    grid-area: equal;
+    background-color: #db8307;
+}
+
+.equal:active {
+    background-color: #cf8011;
+}
+
+.operator {
+    background: var(--grey-100);
+}
+
+.number, .C {
+    background: #fff;
+}
+
+.operator:active,
+.number:active,
+.C:active {
+    background: var(--grey-200);
+}
