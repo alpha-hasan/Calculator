@@ -37,7 +37,7 @@ export default function Calculator() {
 
             // limiting the amount of decimals the user can type + decimal fix after equals button is pressed
 
-            else if (key.target.name == '.' && result !== '0' && result !== '' && result.charAt(result.length - 1) !== '.' && !operators.includes(result.charAt(result.length - 1))) {
+            else if (key.target.name === '.' && result !== '0' && result !== '' && result.charAt(result.length - 1) !== '.' && !operators.includes(result.charAt(result.length - 1))) {
                 setResult(result + key.target.name);
             }
 

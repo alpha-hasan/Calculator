@@ -1,4 +1,3 @@
-import React, { useRef } from 'react'
 import './calckeys.css'
 
 export default function CalcKeys(props) {
